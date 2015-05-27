@@ -1,0 +1,192 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+    android:background="@drawable/darkgray">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	    <Button
+	        android:id="@+id/setting_dining"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/selector_dining" />
+	    
+	    <Button
+	        android:id="@+id/setting_entertainment"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/setting_dining"
+	        android:layout_below="@+id/setting_dining"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/selector_entertainment" />
+	    
+	    <Button
+	        android:id="@+id/setting_shopping"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/setting_entertainment"
+	        android:layout_below="@+id/setting_entertainment"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/selector_shopping"/>
+	    
+	    <Button
+	        android:id="@+id/setting_sporting"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/setting_shopping"
+	        android:layout_below="@+id/setting_shopping"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/selector_sporting"/>
+	    
+	    <Button
+	        android:id="@+id/setting_transportation"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/setting_sporting"
+	        android:layout_below="@+id/setting_sporting"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/selector_transportation"/>
+	    
+	    <Button
+	        android:id="@+id/setting_working"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/setting_transportation"
+	        android:layout_below="@+id/setting_transportation"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/selector_working"/>
+	    
+	    <ImageView
+	        android:id="@+id/dining_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/setting_dining"
+	        android:layout_alignTop="@+id/setting_dining"
+	        android:src="@drawable/start"
+	        android:visibility="invisible" />
+	    <ImageView
+	        android:id="@+id/entertainment_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/setting_entertainment"
+	        android:layout_alignTop="@+id/setting_entertainment"
+	        android:src="@drawable/start"
+	        android:visibility="invisible" />
+	    <ImageView
+	        android:id="@+id/shopping_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/setting_shopping"
+	        android:layout_alignTop="@+id/setting_shopping"
+	        android:src="@drawable/start" 
+	        android:visibility="invisible" />
+	    <ImageView
+	        android:id="@+id/sporting_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/setting_sporting"
+	        android:layout_alignTop="@+id/setting_sporting"
+	        android:src="@drawable/start" 
+	        android:visibility="invisible" />
+	    <ImageView
+	        android:id="@+id/transportation_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/setting_transportation"
+	        android:layout_alignTop="@+id/setting_transportation"
+	        android:src="@drawable/start"
+	        android:visibility="invisible" />
+	    <ImageView
+	        android:id="@+id/working_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/setting_working"
+	        android:layout_alignTop="@+id/setting_working"
+	        android:src="@drawable/start"
+	        android:visibility="invisible" />
+	
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/tv_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sel_min"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Spinner
+        android:id="@+id/spinner_time"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="right"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_ask_freq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner_time" >
+
+        <TextView
+            android:text="@string/sel_frequency"
+            android:id="@+id/tv_frequency" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <RadioButton
+            android:id="@+id/radio_usually"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/usually" 
+            android:textColor="@drawable/radio_button_text_color"/>
+        
+        <RadioButton
+            android:id="@+id/radio_often"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/often" 
+            android:textColor="@drawable/radio_button_text_color"/>
+
+        <RadioButton
+            android:id="@+id/radio_seldom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seldom" 
+            android:textColor="@drawable/radio_button_text_color"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_pie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup_ask_freq"
+        android:layout_below="@+id/radioGroup_ask_freq"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/usually_pie" />
+    
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_btn"
+        android:text="@string/start_ask_question"
+        android:textColor="@drawable/button_text_color"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
+
+</ScrollView>

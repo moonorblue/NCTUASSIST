@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkgray"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <SeekBar
+        android:id="@+id/setting_volumn_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"/>
+    <TextView    
+        android:id="@+id/setting_volumn_seekBarValue"  
+	    android:layout_width="fill_parent"   
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn"
+        android:textColor="@drawable/button_text_color"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/ApplyNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/setting_volumn_seekBar"
+        android:layout_below="@+id/setting_volumn_seekBar"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector_apply_now"/>
+
+</RelativeLayout>
+

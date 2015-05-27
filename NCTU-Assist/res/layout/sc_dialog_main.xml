@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+
+    <ImageView
+        android:id="@+id/scImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:src="@drawable/without_dining_image1"/>
+    
+    <Button
+        android:id="@+id/scButton1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/scButton5"
+        android:layout_toRightOf="@+id/scButton2"
+        android:background="#00000000" />
+    
+    <Button
+        android:id="@+id/scButton2"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/scButton4"
+        android:layout_alignLeft="@+id/scButton3"
+        android:layout_marginLeft="32dp"
+        android:background="#00000000" />
+    
+    <Button
+        android:id="@+id/scButton3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/scImage"
+        android:layout_marginTop="128dp"
+        android:layout_marginLeft="23dp"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/scButton4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/scButton1"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/scButton3"
+        android:background="#00000000" />
+    
+    <Button
+        android:id="@+id/scButton5"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/scButton3"
+        android:layout_toRightOf="@+id/scButton4"
+        android:background="#00000000" />
+    
+    <Button
+        android:id="@+id/scButton6"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/scImage"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="163dp"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/scButton8"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/scButton6"
+        android:layout_alignRight="@+id/scButton5"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/scButton7"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_toLeftOf="@+id/scButton8"
+        android:layout_below="@+id/scButton4"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/scOutButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/scImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="OK" />
+
+</RelativeLayout>
